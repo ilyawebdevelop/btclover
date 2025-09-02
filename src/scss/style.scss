@@ -1,0 +1,44 @@
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/text";
+@import "./ui/card-bet";
+@import "./ui/form";
+@import "./ui/mini-ui";
+@import "./ui/card-played";
+@import "./ui/bet-placed";
+@import "./ui/card-story";
+@import "./ui/card-notification";
+
+// widgets
+@import "./widgets/modal";
+@import "./widgets/modal-filters";
+@import "./widgets/modal-invite";
+@import "./widgets/modal-balance";
+
+// components
+@import "./components/header";
+
+@import "./components/head-profile";
+@import "./components/main-bet";
+@import "./components/loader";
+@import "./components/s-bets";
+@import "./components/s-profile";
+@import "./components/logout";
+@import "./components/s-support";
+@import "./components/s-friends";
+@import "./components/s-balance";
+@import "./components/balance-nav";
+@import "./components/s-notifications";
+@import "./components/leaders";
+@import "./components/tasks";
+
+@import "./components/tab-bar";

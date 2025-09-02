@@ -1,0 +1,98 @@
+.tasks {
+  &-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border-radius: 8px;
+    background-color: var(--neutral-1000);
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      width: 126px;
+      height: 100%;
+      background: linear-gradient(270deg, rgba(41, 144, 255, 0.25) 0%, rgba(41, 144, 255, 0.00) 100%);
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+    }
+
+    &-btn {
+      height: 34px;
+      padding-left: 12px;
+      padding-right: 12px;
+      color: var(--primary-300);
+      text-align: center;
+      background-color: #2E3C4B;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 120%;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      min-width: 80px;
+      position: relative;
+      z-index: 4;
+
+      &--success {
+        min-width: 44px;
+      }
+    }
+
+    &--bg-gray {
+      background: rgba(18, 19, 20, 0.50);
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.tasks-item-img {
+  width: 47px;
+  height: 47px;
+  background-color: var(--primary-300);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tasks-item-stars {
+  position: relative;
+  bottom: 1px;
+}
+
+.tasks-item-btn--blue {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #1875DC 33.76%, #2280E7 52.17%, #116ED6 69.67%);
+  box-shadow: 0 6px 5px 0 rgba(255, 255, 255, 0.10) inset, 0 -2px 2px 1.2px rgba(11, 14, 81, 0.47) inset, 0 -0.2px 1px 0 #04062B inset;
+  color: rgba(213, 233, 255, 1);
+}
+
+.tasks-item--bg {
+  background: url('@img/task-bg.png') no-repeat right -100px center / cover;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    // content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: var(--neutral-1000);
+    z-index: 1;
+  }
+}

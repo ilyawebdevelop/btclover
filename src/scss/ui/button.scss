@@ -1,0 +1,213 @@
+.btn-reset {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+.btn-s {
+  @include flex-center;
+  gap: 10px;
+  padding: 20px 30px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  box-shadow:
+    inset 0 -0px 1px 0 #04062b,
+    inset 0 -2px 2px 1px rgba(11, 14, 81, 0.47),
+    inset 0 6px 5px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    180deg,
+    #1875dc 33.76%,
+    #2280e7 52.17%,
+    #116ed6 69.67%
+  );
+  font-family: "SFProText", sans-serif;
+
+  transition: opacity 0.2s ease;
+
+  @include pressed {
+    opacity: 0.8;
+  }
+  &[disabled] {
+    background: var(--primary-dark);
+    pointer-events: none;
+
+    span {
+      text-shadow:
+        0 0 4px rgba(202, 217, 255, 0.32),
+        0 0 25px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 255, 255, 0.5) !important;
+    }
+  }
+  &._red {
+    background: radial-gradient(50% 50% at 50% 50%, #9e242f 0%, #e03e4c 100%);
+    box-shadow:
+      inset 0 0 0 1px rgba(111, 115, 230, 0.22),
+      inset 0 0 15px 0 rgba(0, 0, 0, 0.25),
+      inset 0 0 4px 0 rgba(0, 0, 0, 0.56);
+
+    span {
+      text-shadow:
+        0 0 4px rgba(202, 217, 255, 0.32),
+        0 0 25px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 255, 255, 0.5) !important;
+    }
+  }
+  &._green {
+    box-shadow:
+      inset 0 0 0 1px rgba(111, 115, 230, 0.22),
+      inset 0 0 15px 0 rgba(0, 0, 0, 0.25),
+      inset 0 0 4px 0 rgba(0, 0, 0, 0.56);
+
+    background: radial-gradient(
+      76.73% 50% at 50% 50%,
+      #1a9547 0%,
+      #40ed7f 100%
+    );
+
+    span {
+      text-shadow:
+        0 0 4px rgba(202, 217, 255, 0.32),
+        0 0 25px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 255, 255, 0.5) !important;
+    }
+  }
+  &._dark {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    background: linear-gradient(0deg, #d5e9ff 100.34%, #fff 26.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-100);
+  }
+}
+
+.btn-dark {
+  @include flex-center;
+  width: fit-content;
+  padding: 13px 25px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  gap: 8px;
+
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.95);
+
+  transition: background-color 0.2s ease;
+
+  @include pressed {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &._primary {
+    color: var(--primary-300);
+  }
+}
+
+.btn-simple {
+  @include flex-center;
+  width: fit-content;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: var(--primary-300);
+
+  transition: color 0.2s ease;
+  @include hover {
+    color: var(--primary-400);
+  }
+}
+
+.btn-o {
+  @include flex-center;
+  gap: 15px;
+  cursor: pointer;
+  padding: 20px;
+  width: fit-content;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgba(22, 117, 219, 0.15);
+
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: var(--primary-300);
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+
+  @include hover {
+    color: white;
+    background-color: rgba(22, 117, 219);
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.btn-outline {
+  @include flex-center;
+  cursor: pointer;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px 20px;
+  width: fit-content;
+  outline: none;
+
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--neutral-200);
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+  @include hover {
+    border-color: var(--primary-300);
+    color: var(--primary-300);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

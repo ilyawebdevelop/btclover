@@ -1,0 +1,143 @@
+.h-5 {
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+}
+.h-6 {
+  font-size: 20px;
+  line-height: 150%;
+}
+.h-7 {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.06em;
+}
+.title-1 {
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: 0.01em;
+}
+.title-2 {
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: 0em;
+}
+
+.text {
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+}
+.hl-text {
+  font-size: 19px;
+  line-height: 126%;
+  letter-spacing: -0.02em;
+}
+.sub-hl-text {
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+}
+.caption {
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-primary-300 {
+  color: var(--primary-300);
+}
+.text-primary-100 {
+  color: var(--primary-100);
+}
+
+.text-neutral-800 {
+  color: var(--neutral-800) !important;
+}
+.text-neutral-600 {
+  color: var(--neutral-600) !important;
+}
+.text-neutral-500 {
+  color: var(--neutral-500) !important;
+}
+.text-neutral-300 {
+  color: var(--neutral-300) !important;
+}
+.text-neutral-200 {
+  color: var(--neutral-200) !important;
+}
+.text-neutral-100 {
+  color: var(--neutral-100) !important;
+}
+
+.text-red-l {
+  color: var(--red-l);
+}
+
+.text-b {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+.text-b-2 {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.07em;
+
+  a {
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+}
+.text-b-3 {
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.text-hint {
+  color: var(--hint);
+}
+.text-green {
+  color: var(--green);
+}
+.text-green-l {
+  color: var(--green-l);
+}
+
+.text-red {
+  color: var(--red);
+}
+.text-red-l {
+  color: var(--red-l);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-break {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.text-opacity {
+  color: rgba(223, 255, 235, 0.9) !important;
+  mix-blend-mode: color-dodge;
+}
+.fz-12 {
+  font-size: 12px;
+  line-height: 18px;
+}
+.fz-14 {
+  font-size: 14px;
+  line-height: 19px;
+}
