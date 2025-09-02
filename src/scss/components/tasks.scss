@@ -44,14 +44,25 @@
       min-width: 80px;
       position: relative;
       z-index: 4;
+      transition: background-color .2s linear;
+      &:focus {
+        background-color: var(--neutral-1000);
+      }
 
       &--success {
         min-width: 44px;
+        background-color: rgba(255, 255, 255, 0.08);
+        transition: background-color .2s linear;
+
+        &:focus {
+          background-color: var(--neutral-1000);
+        }
       }
     }
 
     &--bg-gray {
       background: rgba(18, 19, 20, 0.50);
+
       &::before {
         display: none;
       }
@@ -80,6 +91,10 @@
   background: linear-gradient(180deg, #1875DC 33.76%, #2280E7 52.17%, #116ED6 69.67%);
   box-shadow: 0 6px 5px 0 rgba(255, 255, 255, 0.10) inset, 0 -2px 2px 1.2px rgba(11, 14, 81, 0.47) inset, 0 -0.2px 1px 0 #04062B inset;
   color: rgba(213, 233, 255, 1);
+  transition: box-shadow .2s linear;
+  &:focus {
+    box-shadow: 0 6px 5px 0 rgba(255, 255, 255, 0.10) inset, 0 -2px 2px 1.2px rgba(11, 14, 81, 0.47) inset, 0 -0.2px 5px 0 #04062B inset;
+  }
 }
 
 .tasks-item--bg {
